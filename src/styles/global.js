@@ -5,6 +5,7 @@ export default createGlobalStyle`
 html, body{
     margin: 0;
     height: 100vh; 
+    font-family: "Poppins", sans-serif;
 }
 
 .main-container{
