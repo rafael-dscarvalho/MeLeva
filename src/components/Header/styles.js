@@ -1,5 +1,17 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import profile from '../../imgs/profile.png'
+import botaoFechar from '../../imgs/botao-fechar.png'
+
+const fadeInUp = keyframes`
+    0% {
+        transform: translateY(40%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(20%);
+        opacity: 1;
+    }
+`;
 
 export const HeaderDiv = styled.div`
     height: 10%;
@@ -64,15 +76,87 @@ export const BtnCadastrar = styled.button`
     }
 `
 
+//modal cadastrar //
+
 export const Dialog = styled.dialog`
     border: 0px;
     position: fixed;
-    z-index: 1;
-  left: 0;
-  top: 0;
-  width: 30%;
-  height: 70%;
-  overflow: auto;
-  left: 50%;
-  top: 50%;
+    left: 0;
+    top: 0;
+    width: 30%;
+    height: 65%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    animation: ${fadeInUp} 1s ease forwards; 
 `
+
+export const H2 = styled.h2`
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #393939;
+    margin-left: 10px;
+    margin-top: 50px;
+`
+
+export const Input = styled.input`
+    background-color: #fff;
+    font-family: "Poppins", sans-serif;
+    border-radius: 0;
+    color: #393939;
+    height: 28px;
+    padding: 12px 18px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 16px;
+    border: 1px solid #dfdfdf;
+    transition: border-color 0.3s ease; 
+
+    &:focus {
+        border-color: #2641c6; 
+        outline: none;
+    }
+`
+
+export const ButtonCadastrarModal = styled.button`
+    background-color: #2641c6;
+    color: #fff;
+    height: 48px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    border-width: 0;
+    border-radius: 400px;
+    width: 450px;
+    cursor: pointer;
+    letter-spacing: .6px;
+    text-decoration: none;
+    position: relative;
+    white-space: nowrap;
+    margin-left: 65px;
+    margin-top: 50px;
+    transition: background-color 0.5s, color 0.5s, border 0.2s, width 0.2s, height 0.2s;
+    &:hover {
+        background-color: #3f58d4;
+    }
+`
+
+export const ButtonFechar = styled.button`
+    width: 20px;
+    height: 20px;
+    justify-content: flex-end;
+    border: none;
+    background-image: url(${botaoFechar});
+    background-position: 5px;
+    background-repeat: no-repeat;
+    background-size: 15px;
+`
+
+export const ButtonFecharContainer = styled.div`
+    display: flex;
+    justify-content: flex-end;
+`
+
+//modal login//
+

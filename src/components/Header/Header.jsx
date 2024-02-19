@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { HeaderDiv, MidDiv, BtnLogin, BtnDiv, BtnCadastrar, Dialog } from './styles';
+import { HeaderDiv, MidDiv, BtnLogin, BtnDiv, BtnCadastrar, Dialog, H2, Input, ButtonCadastrarModal, ButtonFechar, ButtonFecharContainer } from './styles';
 
 export function Header() {
     const [modalOpen, setModalOpen] = useState(false);
@@ -12,7 +12,6 @@ export function Header() {
         setModalOpen(false);
     }
 
-    
 
     return (
         <HeaderDiv>
@@ -26,8 +25,15 @@ export function Header() {
             </MidDiv>
             {modalOpen && (
                 <Dialog open>
-                    <h1>Oi, eu sou um modal sem graça! :T</h1>
-                    <button onClick={closeModal}>Fechar</button>
+                    <ButtonFecharContainer>
+                        <ButtonFechar onClick={closeModal}></ButtonFechar>
+                    </ButtonFecharContainer>
+                    <H2>Seja MeLeva</H2>
+                    <Input type="email" placeholder='Email'></Input>
+                    <Input placeholder='Nome'></Input>
+                    <Input placeholder='Sobrenome'></Input>
+                    <Input type="password" placeholder='Senha'></Input>
+                    <ButtonCadastrarModal>Cadastrar</ButtonCadastrarModal>
                 </Dialog>
             )}
         </HeaderDiv>
