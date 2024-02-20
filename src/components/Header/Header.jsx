@@ -1,32 +1,23 @@
-import { useState } from 'react';
-import { HeaderDiv, MidDiv, BtnLogin, BtnDiv, BtnCadastrar, Dialog, H2, Input, ButtonCadastrarModal, ButtonFechar, ButtonFecharContainer } from './styles';
+import { useState } from 'react'
+import { HeaderDiv, MidDiv, BtnLogin, BtnDiv, BtnCadastrar, Dialog, H2, Input, ButtonCadastrarModal, ButtonFechar, ButtonFecharContainer } from './styles'
 
 export function Header() {
-    const [modalOpen, setModalOpen] = useState(false);
-
-    function openModal() {
-        setModalOpen(true);
-    }
-
-    function closeModal() {
-        setModalOpen(false);
-    }
-
+    const [modalRegister, setModalRegister] = useState(false)
 
     return (
         <HeaderDiv>
             <MidDiv>
                 <BtnDiv>
-                    <BtnCadastrar onClick={openModal}>Cadastrar</BtnCadastrar>
+                    <BtnCadastrar onClick={() => setModalRegister(!modalRegister)}>Cadastrar</BtnCadastrar>
                 </BtnDiv>
                 <BtnDiv>
                     <BtnLogin>Login</BtnLogin>
                 </BtnDiv>
             </MidDiv>
-            {modalOpen && (
+            {modalRegister && (
                 <Dialog open>
                     <ButtonFecharContainer>
-                        <ButtonFechar onClick={closeModal}></ButtonFechar>
+                        <ButtonFechar onClick={() => setModalRegister(!modalRegister)}></ButtonFechar>
                     </ButtonFecharContainer>
                     <H2>Seja MeLeva</H2>
                     <Input type="email" placeholder='Email'></Input>
@@ -37,6 +28,5 @@ export function Header() {
                 </Dialog>
             )}
         </HeaderDiv>
-        
-    );
+    )
 }

@@ -11,7 +11,7 @@ const fadeInUp = keyframes`
         transform: translateY(20%);
         opacity: 1;
     }
-`;
+`
 
 export const HeaderDiv = styled.div`
     height: 10%;
@@ -75,8 +75,6 @@ export const BtnCadastrar = styled.button`
         background-color: #3f58d4;
     }
 `
-
-//modal cadastrar //
 
 export const Dialog = styled.dialog`
     border: 0px;
@@ -157,6 +155,3 @@ export const ButtonFecharContainer = styled.div`
     display: flex;
     justify-content: flex-end;
 `
-
-//modal login//
-

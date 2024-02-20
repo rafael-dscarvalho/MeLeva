@@ -1,9 +1,7 @@
 import { Dialog } from './styles'
 
-
-export function Cadastrar(){
-
-    const [modalOpen, setModalOpen] = useState(false);
+export function Cadastrar() {
+    const [modalOpen, setModalOpen] = useState(false)
 
     function openModal() {
         setModalOpen(true);
@@ -13,8 +11,7 @@ export function Cadastrar(){
         setModalOpen(false);
     }
 
-    return(
-        
+    return (
         <Dialog>
             <h1>Oi, eu sou um modal sem graça! :T</h1>
         </Dialog>

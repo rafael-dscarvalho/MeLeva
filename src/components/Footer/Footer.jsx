@@ -5,9 +5,8 @@ import instagram from '../../imgs/instagram_icon.png'
 import linkedin from '../../imgs/linkedin_icon.png'
 import youtube from '../../imgs/youtube_icon.png'
 
-
-export function Footer(){
-    return(
+export function Footer() {
+    return (
         <FooterDiv>
             <TextContainer>
                 <Tittle>

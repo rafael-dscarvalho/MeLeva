@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import background from '../../imgs/home_background.jpg';
+import background from '../../imgs/home_background.jpg'
 
 export const MainContainer = styled.div`
     margin: 0;
@@ -166,12 +166,12 @@ export const P = styled.p`
     line-height: 1.4;
   
     
-` 
+`
 
 export const ImgIcon = styled.img`      
     width: 50px; 
     height: 50px;
-` 
+`
 
 export const HappyContainer = styled.div`
     height: 25%;
@@ -215,5 +215,3 @@ export const BottomText = styled.h2`
     color: #3c3b3b;
     margin: 0;
 `
-
-
