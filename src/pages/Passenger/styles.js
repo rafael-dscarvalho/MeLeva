@@ -112,7 +112,9 @@ export const ButtonContact = styled.button`
     border: 0;
     border-radius: 5px;
     padding: .5em 1em;
+    height: fit-content;
     background: #00dcc0;
+    cursor: pointer;
 `
 
 export const SpanTitle = styled.span`

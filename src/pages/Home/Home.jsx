@@ -67,8 +67,6 @@ export function Home() {
                             </TipText>
                         </Container>
                     </InnerTipContainer>
-                </TipsContainer>
-                <TipsContainer>
                     <InnerTipContainer>
                         <Container>
                             <Icon>
