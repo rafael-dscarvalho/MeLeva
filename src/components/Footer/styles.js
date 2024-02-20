@@ -6,6 +6,7 @@ export const FooterDiv = styled.div`
     display: flex;
     align-items: center;
     background-color: white;
+    z-index: 15;
 `
 
 export const TextContainer = styled.div`

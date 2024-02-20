@@ -14,7 +14,7 @@ const fadeInUp = keyframes`
 `
 
 export const HeaderDiv = styled.div`
-    height: 10%;
+    padding: 2% 0;
     width: 100%;
     display: flex;
     align-items: center;
@@ -22,18 +22,17 @@ export const HeaderDiv = styled.div`
 `
 
 export const MidDiv = styled.div`
-    height: 90%;
-    width: 100%;
+    width: 95%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    gap: 2.5%;
 
 `
 
 export const BtnDiv = styled.div`
     height: 100%;
-    width: 10%;
-    display: flex ;
+    display: flex;
     align-items: center;
 `
 
@@ -41,7 +40,7 @@ export const BtnLogin = styled.button`
     color: #fff;
     background-color: rgba(0,0,0,0);
     background-image: url(${profile});
-    background-position: 5px;
+    background-position: 0;
     background-repeat: no-repeat;
     background-size: 50px;
     border-width: 0;
@@ -50,8 +49,9 @@ export const BtnLogin = styled.button`
     line-height: 1;
     font-size: 16px;
     letter-spacing: .6px;
-    padding: 13px 4rem;
+    padding: 13px 5%;
     text-decoration: none;
+    width: 10em;
     height: 50px;
     font-family: "Poppins", sans-serif;
 `
