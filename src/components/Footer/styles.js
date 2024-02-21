@@ -1,11 +1,12 @@
 import styled from 'styled-components'
 
 export const FooterDiv = styled.div`
-    height: 30%;
+    height: 30vh;
     width: 100%;
     display: flex;
     align-items: center;
     background-color: white;
+    z-index: 15;
 `
 
 export const TextContainer = styled.div`

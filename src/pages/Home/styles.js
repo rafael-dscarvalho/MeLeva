@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import background from '../../imgs/home_background.jpg';
+import background from '../../imgs/home_background.jpg'
 
 export const MainContainer = styled.div`
     margin: 0;
@@ -7,7 +7,7 @@ export const MainContainer = styled.div`
 `
 
 export const TopContainer = styled.div`
-    height: 95vh;
+    height: 100vh;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(${background});
     background-size: cover; 
     background-position: center; 
@@ -69,7 +69,7 @@ export const Button = styled.button`
     color: #3c3b3b;
     background-color: #00dcc0;
     font-weight: 700;
-    width: 23%;
+    /* width: 23%; */
     padding-left: 1rem;
     padding-right: 1rem;
     height: 54px;
@@ -81,28 +81,28 @@ export const Button = styled.button`
 `
 
 export const MidContainer = styled.div`
-    height: 100%;
+    height: 100vh;
+    width: 100%;
     background-color: #00dcc0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    gap: 1em;
 `
 
 export const TravelContainer = styled.div`
-    height: 25%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 20px;
-    font-size: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 11rem;
     letter-spacing: -5px;
     color: white;
     font-weight: bold;
-    translate: none;
-    rotate: none;
-    scale: none;
-    transform: translate(0px, 0px);
 `
 
 export const PhraseContainer = styled.div`
-    height: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -110,22 +110,17 @@ export const PhraseContainer = styled.div`
 `
 
 export const TipsContainer = styled.div`
-    height: 20%;
-    margin-left: 15%;
-    margin-right: 15%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1em 0;
+    width: 70%;
 `
 export const InnerTipContainer = styled.div`
-    width: 50%;
-    height: 80%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: -50px;
-    
+    width: 100%;
 `
 
 export const Container = styled.div`
@@ -133,14 +128,16 @@ export const Container = styled.div`
     border-radius: 50px;
     color: #fff;
     width: 80%;
-    height: 70%;
+    max-width: 80%;
+    height: 6em;
     display: flex;
     align-items: center;
+    padding: 0 1em 0 0;
 `
 
 export const Icon = styled.div`
-    height: 80px;
-    width: 80px;
+    height: 70%;
+    aspect-ratio: 1/1;
     background-color: #fff;
     border-width: 10px;
     border-style: solid;
@@ -154,9 +151,9 @@ export const Icon = styled.div`
 
 export const TipText = styled.div`  
     height: 100%;
-    width: 70%;
     display: flex;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     margin-left: 20px;
 `
 
@@ -164,17 +161,17 @@ export const P = styled.p`
     font-weight: 400;
     font-size: 18px;
     line-height: 1.4;
-  
-    
-` 
+`
 
 export const ImgIcon = styled.img`      
-    width: 50px; 
-    height: 50px;
-` 
+    width: 50%; 
+    height: 50%;
+`
 
 export const HappyContainer = styled.div`
-    height: 25%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -185,20 +182,20 @@ export const HappyContainer = styled.div`
 `
 
 export const CircleContainer = styled.div`
-    right: 0.1px;
-    bottom: -250px;
+    right: 0;
+    bottom: -10rem;
     z-index: 1;
     position: absolute;
 `
 
 export const CircleContainer2 = styled.div`
-    bottom: -1100px;
-    left: -1px;
+    bottom: -5rem;
+    left: 0;
     position: absolute;
 `
 
 export const Img = styled.img`
-    width: 250px;
+    width: 10rem;
     height: auto;
 `
 
@@ -215,5 +212,3 @@ export const BottomText = styled.h2`
     color: #3c3b3b;
     margin: 0;
 `
-
-

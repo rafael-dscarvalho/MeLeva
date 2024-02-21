@@ -1,6 +1,8 @@
-import { MainContainer, TopContainer, MidContainer, InnerContainer, Logo, TextAndButton, H1, H2, TextContainer, ButtonContainer, Button,
+import {
+    MainContainer, TopContainer, MidContainer, InnerContainer, Logo, TextAndButton, H1, H2, TextContainer, ButtonContainer, Button,
     TravelContainer, PhraseContainer, TipsContainer, HappyContainer, CircleContainer, CircleContainer2, Img, TopText, BottomText, InnerTipContainer,
-    Icon, TipText, Container, P, ImgIcon } from './styles'
+    Icon, TipText, Container, P, ImgIcon
+} from './styles'
 import { Header } from '../../components/Header/Header.jsx'
 import { Footer } from '../../components/Footer/Footer.jsx'
 import circle from '../../imgs/circle.png'
@@ -10,10 +12,10 @@ import leafPin from '../../imgs/leaf-pin.png'
 import savingsPin from '../../imgs/savings-pin.png'
 import smilePin from '../../imgs/smile-pin.png'
 
-export function Home(){
-    return(
+export function Home() {
+    return (
         <MainContainer>
-            <TopContainer>    
+            <TopContainer>
                 <Header />
                 <InnerContainer>
                     <Logo>
@@ -65,8 +67,6 @@ export function Home(){
                             </TipText>
                         </Container>
                     </InnerTipContainer>
-                </TipsContainer>
-                <TipsContainer>
                     <InnerTipContainer>
                         <Container>
                             <Icon>
@@ -97,7 +97,5 @@ export function Home(){
             </MidContainer>
             <Footer />
         </MainContainer>
-        
-
     )
 }
