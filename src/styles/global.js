@@ -10,7 +10,6 @@ html, body{
 
 .main-container{
     height: 100vh;
-    background-color: black;
 }
 `
 

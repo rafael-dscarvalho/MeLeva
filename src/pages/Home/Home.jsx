@@ -17,7 +17,7 @@ export function Home(){
                 <Header />
                 <InnerContainer>
                     <Logo>
-                        <H1>CarShare</H1>
+                        <H1>MeLeva</H1>
                     </Logo>
                     <TextAndButton>
                         <TextContainer>

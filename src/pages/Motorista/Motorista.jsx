@@ -1,8 +1,8 @@
 
-export function Page1(){
+export function Motorista(){
     return(
         <div className='main-container'>    
-
+            
         </div>
     )
 }
