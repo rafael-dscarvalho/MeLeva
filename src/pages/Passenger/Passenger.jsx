@@ -1,10 +1,15 @@
-import { ButtonContact, ButtonFilter, Card, Cards, CardsContainer, Filter, FiltersContainer, H1, HeaderContainer, MainContainer, MidContainer, PassengerData, ProfileData, ProfileImg, SpanData, SpanFilter, SpanTitle, StyledLink } from "./styles"
+import { ButtonContact, ButtonFilter, Card, Cards, CardsContainer, Filter, FiltersContainer, FormSearch, H1, HeaderContainer, InputSearch, InputSubmit, MainContainer, MidContainer, PassengerData, ProfileData, ProfileImg, SpanData, SpanFilter, SpanTitle, StyledLink } from "./styles"
 import { Footer } from '../../components/Footer/Footer'
 import { useState } from "react"
 import Perfil from '/perfil.png'
 
 export function Passenger() {
     const [passenger, setPassenger] = useState({ name: 'Biruleibe' })
+
+    async function handleSearch(event) {
+        event.preventDefault()
+    }
+
     return (
         <MainContainer>
             <HeaderContainer>
@@ -12,6 +17,7 @@ export function Passenger() {
                 <nav>
                     <StyledLink to='/'>Home</StyledLink>
                     <StyledLink to='/passenger'>Passageiro</StyledLink>
+                    <StyledLink to='/ride'>Motorista</StyledLink>
                 </nav>
                 <PassengerData>
                     Bem vindo, {passenger.name}
@@ -80,6 +86,11 @@ export function Passenger() {
                 </FiltersContainer>
                 <CardsContainer>
                     <H1>Motoristas</H1>
+                    <FormSearch onSubmit={handleSearch}>
+                        <InputSearch placeholder="Origem" />
+                        <InputSearch placeholder="Destino" />
+                        <InputSubmit value='Pesquisar' />
+                    </FormSearch>
                     <Cards>
                         <Card>
                             <ProfileImg src={Perfil} />

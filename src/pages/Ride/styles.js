@@ -10,7 +10,7 @@ export const MainContainer = styled.main`
 
 export const HeaderContainer = styled.header`
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 10vh;
     gap: 2em;
@@ -19,6 +19,10 @@ export const HeaderContainer = styled.header`
         display: flex;
         gap: .5em;
     }
+`
+
+export const RiderData = styled.div`
+    font-size: 14px;
 `
 
 export const StyledLink = styled(Link)`

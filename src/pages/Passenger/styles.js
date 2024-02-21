@@ -113,8 +113,14 @@ export const ButtonContact = styled.button`
     border-radius: 5px;
     padding: .5em 1em;
     height: fit-content;
-    background: #00dcc0;
+    background: rgba(0, 220, 192, 1);
     cursor: pointer;
+    transition: all .5s;
+    opacity: .7;
+
+    &:hover {
+        opacity: 1;
+    }
 `
 
 export const SpanTitle = styled.span`
@@ -123,4 +129,35 @@ export const SpanTitle = styled.span`
 
 export const SpanData = styled.span`
     
+`
+
+export const FormSearch = styled.form`
+    display: flex;
+    align-items: center;
+    gap: .5em;
+`
+
+export const InputSearch = styled.input.attrs({ type: 'search' })`
+    border: 2px solid #aaa;
+    border-radius: 5px;
+    padding: .5em 1em;
+    color: #555;
+
+    &:focus {
+        outline: none;
+    }
+`
+
+export const InputSubmit = styled.input.attrs({ type: 'submit' })`
+    background-color: rgba(38, 65, 198, 1);
+    color: #fff;
+    border: 2px solid rgba(38, 65, 198, 1);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: .5em 1em;
+    transition: all .3s;
+    opacity: .7;
+    &:hover {
+        opacity: 1;
+    }
 `
